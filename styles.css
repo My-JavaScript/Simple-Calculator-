@@ -1,55 +1,59 @@
-/* Basic styling for the calculator */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .calculator {
-    width: 300px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
 }
 
 #display {
-    width: 100%;
-    height: 50px;
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: right;
-    padding-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+  width: 95%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-button {
-    padding: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
+.btn {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  color: #333;
 }
 
-button:hover {
-    background-color: #0056b3;
+.btn.operator {
+  background-color: #f9a826;
+  color: white;
 }
 
-button:active {
-    background-color: #004494;
+.btn.clear {
+  background-color: #ff5e57;
+  color: white;
+  grid-column: span 4;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
